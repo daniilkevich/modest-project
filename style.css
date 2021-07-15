@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #341e22;
+}
+.conteiner {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  flex-wrap: wrap;
+  /*align-items: center;*/ /*нужен ли он сдесь*/
+}
+.logo {
+  text-align: center;
+}
+.header-row {
+  height: 80px;
+  align-items: center;
+}
+.sliderimage {
+  width: 100%;
+}
+.row2 {
+  display: flex;
+}
+
+[class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+/* нужно прописать подобным образом как для .col-xs-1 только от 1 до 12ти */
+.col-xs-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.col-sm-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/*mobile xs*/
+@media (max-width: 767px) {
+  .col-xs-hidden {
+    display: none;
+  }
+  nav {
+    overflow-x: scroll;
+  }
+  .about-title {
+  }
+}
+/*tablet sm*/
+@media (min-width: 768px) {
+  .conteiner {
+    max-width: 720px;
+  }
+  .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-sm-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .col-sm-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+}
+/*laptop md*/
+@media (min-width: 992px) {
+  .conteiner {
+    max-width: 960px;
+  }
+  .col-md-5 {
+    flex: 0 0 41.66666%;
+    max-width: 41.66666%;
+  }
+  .col-md-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+}
+@media (min-width: 1200px) {
+  .conteiner {
+    max-width: 1170px;
+  }
+}
+.menu {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+.menu {
+  list-style: none;
+}
+.menu li {
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.menu li:first-child {
+  border: 2px solid #23b7a3;
+  border-radius: 3px;
+  color: #23b7a3;
+}
+.menu a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  color: #ad9c9b;
+  text-transform: uppercase;
+}
+.about-title {
+  height: 160px;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 160px;
+}
+.point {
+  height: 36px;
+  width: 10px;
+  background-color: #e4cfd2;
+  color: #e4cfd2;
+  line-height: 160px;
+}
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: #998083;
+  font-weight: normal;
+  margin-bottom: 35px;
+}
+b {
+  font-weight: bold;
+}
+/*
+.header {
+  padding: 25px 0px;
+  background-color: #1d2126;
+}
+.col-md-6 {
+  min-width: 50%;
+}
+
+.col-md-3 {
+  align-self: flex-start;
+}
+
+
+@media (max-width: 425px) {
+  .conteiner {
+    max-width: none;
+  }
+  .searchbox {
+    display: none;
+  }
+  .row {
+    display: block;
+  }
+  .logo {
+    text-align: center;
+  }
+  .col-md-6 {
+    min-width: 425px;
+  }
+  .header {
+    width: 100%;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  list-style: none;
+}
+.menu li {
+  width: 25%;
+}
+.menu li:first-child {
+  border: 2px solid #23b7a3;
+  border-radius: 3px;
+  color: #23b7a3;
+}
+.menu a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  color: #ad9c9b;
+  text-transform: uppercase;
+}
+.searchinput {
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+  color: #ad9c9b;
+  border: 2px solid #ad9c9b;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 2px;
+}*/
