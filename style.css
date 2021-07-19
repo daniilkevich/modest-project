@@ -3,6 +3,9 @@
 }
 header {
   background-color: #341e22;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
 .conteiner {
   width: 100%;
@@ -16,7 +19,7 @@ header {
   margin-left: -15px;
   margin-right: -15px;
   flex-wrap: wrap;
-  /*align-items: center;*/ /*нужен ли он сдесь*/
+  
 }
 .logo {
   text-align: center;
@@ -30,6 +33,7 @@ header {
 }
 .row2 {
   display: flex;
+  margin: 10px 0px 10px 0px;
 }
 
 [class*="col-"] {
@@ -50,6 +54,7 @@ header {
   max-width: 100%;
 }
 
+
 /*mobile xs*/
 @media (max-width: 767px) {
   .col-xs-hidden {
@@ -58,7 +63,14 @@ header {
   nav {
     overflow-x: scroll;
   }
-  .about-title {
+  .about-title-text {
+    font-size: 28px;
+  }
+  .team-title-text {
+    font-size: 26px;
+  }
+  .topic-picture {
+    width: 263px;
   }
 }
 /*tablet sm*/
@@ -70,9 +82,17 @@ header {
     flex: 0 0 25%;
     max-width: 25%;
   }
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+   }
   .col-sm-7 {
     flex: 0 0 58.33333%;
     max-width: 58.33333%;
+  }
+  .col-sm-8 {
+    flex: 0 0 66.66664%;
+    max-width: 66.66664%;
   }
   .col-sm-2 {
     flex: 0 0 16.66667%;
@@ -84,9 +104,21 @@ header {
   .conteiner {
     max-width: 960px;
   }
+  .col-md-3{
+    flex: 0 0 24.99999%;
+    max-width: 24.99999%;
+  }
+  .col-md-4 {
+    flex: 0 0 33.33332%;
+    max-width: 33.33332%;
+  }
   .col-md-5 {
     flex: 0 0 41.66666%;
     max-width: 41.66666%;
+  }
+  .col-md-6{
+   flex: 0 0 50%;
+   max-width: 50%;
   }
   .col-md-7 {
     flex: 0 0 58.33333%;
@@ -110,12 +142,18 @@ header {
   width: 25%;
   padding-left: 10px;
   padding-right: 10px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+.menu li:hover{
+  border: 2px solid #808889;
+  border-radius: 3px;
 }
 .menu li:first-child {
   border: 2px solid #23b7a3;
   border-radius: 3px;
-  color: #23b7a3;
 }
+
 .menu a {
   display: block;
   height: 30px;
@@ -150,6 +188,256 @@ p {
 }
 b {
   font-weight: bold;
+}
+.count {
+  height: 50px;
+  min-width: 50px;
+  background-color: #39a493;
+  color: white;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 50px;
+}
+.description {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: #998083;
+  font-weight: normal;
+}
+.topic {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #292f36;
+  margin-bottom: 10px;
+}
+.social-icons {
+  background-color: #ceb8bb;
+  margin-right: 1px;
+  margin-bottom: 25px;
+}
+.profile-box {
+  width: 263px;
+  background-color: #e1e6ea;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.profile-box:hover {
+  background-color: #4e3e45;
+  color: white;
+  display: block;
+}
+.profile-box:hover .row3 {
+  display: block;
+}
+.profile-box:hover .position {
+  color: white;
+}
+.name {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0px 5px 0px;
+}
+.position {
+  font-size: 14px;
+  color: #998083;
+  font-weight: normal;
+  text-align: center;
+  margin: 5px 0px 0px 0px;
+  padding-bottom: 15px;
+}
+.social-icons2 {
+  background-color: #4e3e45;
+  margin-right: 1px;
+  margin-bottom: 25px;
+}
+.row3 {
+  position: absolute;
+  display: none;
+  margin: 0px auto;
+  top: 30%;
+  left: 22%;
+}
+.work-box:hover .target {
+  display: block;
+}
+
+.work-box:hover .topic-name {
+  background-color: #4e3e45;
+  color: white;
+}
+.work-box {
+  position: relative;
+  margin: 0 auto;
+}
+.target {
+  position: absolute;
+  display: none;
+  margin: 0;
+  top: 40%;
+  left: 45%;
+  right: 0;
+  bottom: 0;
+}
+.target-icon {
+  background-color: transparent;
+}
+.topic-name {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0px;
+  padding-bottom: 20px;
+}
+.row5{
+  display: flex;
+  flex-wrap: wrap;
+}
+.topic-picture {
+  width: 100%;
+}
+.lovely-work{
+  background-color: #3a454d;
+}
+.button{
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.showbtn{
+  background-color: #3a454d;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.searchinput {
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+  color: #ad9c9b;
+  border: 2px solid #ad9c9b;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+.servicelogo{
+  text-align: center;
+}
+.servicetitle{
+  text-align: center;
+  margin: 15px 0;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.servicedescr{
+  text-align: center;
+  font-size: 16px;
+  color: #b0b1b3;
+}
+.service{
+  margin: 15px 0;
+}
+.features-section{
+  background-color: #3a454d;
+}
+.featurestitle{
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 50px 0px 30px 0px;
+}
+.featuresdescr{
+  font-size: 16px;
+  color: white;
+  margin-bottom: 120px;
+}
+.block{
+  display: block;
+  border: none;
+  background-color: #eaeef1;
+  height: 40px;
+}
+.input{
+  width: 100%;
+}
+.textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  height: 120px;
+}
+.yourname{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  
+}
+.youremail{
+  margin:20px 0px 20px 0px;
+}
+.modal{
+  margin: 20px 0px 20px 0px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.sendbtn-block{
+  margin-left: -15px;
+}
+.sendbtn{
+  width: 50%;
+  height: 40px;
+  border: 2px solid #23b7a4;
+  border-radius: 5px;
+  background-color: #23b7a4;
+  color: white;
+}
+.contact-title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact{
+  margin-bottom: 15px;
+}
+.social{
+  line-height: 100px;
+}
+.s-icons{
+  margin-top: 26px;
+}
+.footer{
+  background-color: #3a454d;
+  height: 100px;
+  color: white;
+  line-height: 100px;
+}
+.rowlast{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+main{
+  font-family: 'Quattrocento Sans',
+  sans-serif;
+  
+}
+.home {
+  color: #23b7a3;
 }
 /*
 .header {
